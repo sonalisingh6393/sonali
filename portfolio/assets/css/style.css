@@ -1499,3 +1499,79 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+/* ===== NEW MODERN SKILLS DESIGN ===== */
+
+.skills-new {
+  margin-top: 30px;
+}
+
+.skills-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card Design */
+.skill-card-new {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.4s;
+  border: 1px solid rgba(105,108,80,0.2);
+
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Hover Effect */
+.skill-card-new:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.skill-card-new h5 {
+  color: #696c50;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Text */
+.skill-card-new p {
+  font-size: 1.25rem;
+  color: #4e4e4e;
+  line-height: 1.6;
+}
+
+/* Highlight Card */
+.skill-card-new.highlight {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #696c50, #8a8f6a);
+  color: #fff;
+}
+
+.skill-card-new.highlight h5,
+.skill-card-new.highlight p {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card-new.highlight {
+    grid-column: span 1;
+  }
+}
